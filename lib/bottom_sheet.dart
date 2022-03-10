@@ -22,7 +22,7 @@ class _BottomSheetViewState extends State<BottomSheetView> {
         child: Container(
           padding: EdgeInsets.only(
             top: 10,
-            bottom: MediaQuery.of(context).viewInsets.bottom + 10,
+            bottom: paddingBottom + 10,
             left: 10,
             right: 10,
           ),
@@ -35,7 +35,6 @@ class _BottomSheetViewState extends State<BottomSheetView> {
                 controller: _nameEditController,
                 onSubmitted: (_) => {},
               ),
-
               //TextField
               TextField(
                 decoration: const InputDecoration(labelText: 'Input Kota'),
